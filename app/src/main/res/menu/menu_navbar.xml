@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_button"
+        android:icon="@drawable/home_logo"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/schedule_button"
+        android:icon="@drawable/schedule_logo"
+        android:title="Schedule" />
+
+    <item
+        android:id="@+id/transaction_button"
+        android:icon="@drawable/transaction_logo"
+        android:title="Transaction History" />
+
+</menu>

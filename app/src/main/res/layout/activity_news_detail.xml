@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsDetail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/back_btn_newsdet"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="146dp"
+            android:layout_toStartOf="@+id/news_tv"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/backbtn_news" />
+
+        <TextView
+            android:id="@+id/news_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="171dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="News"
+            android:textColor="@color/biru"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/divider_match"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/news_tv"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="13dp"
+            android:background="@color/biru" />
+
+        <ImageView
+            android:id="@+id/image_news_detail"
+            android:layout_width="match_parent"
+            android:layout_height="211dp"
+            android:layout_below="@+id/news_tv"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="16dp"
+            android:elevation="4dp"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@color/abu" />
+
+        <TextView
+            android:id="@+id/berita_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="452dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="268dp"
+            android:layout_marginBottom="11dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/inter"
+            android:text='Jakarta - Tim voli putri Indonesia berhasil meraih kemenangan dalam pertandingan persahabatan melawan tim Malaysia dengan skor 3-1 pada Selasa (tanggal 30 April). Pertandingan yang berlangsung di GOR Soemantri, Jakarta Selatan ini menjadi pertandingan kedua antara kedua tim dalam rangkaian persahabatan sebelum keduanya turun di ajang SEA Games 2023.Tim Indonesia yang dijuluki "Garuda Muda" mampu tampil superior di set pertama dengan skor 25-19. Namun, tim Malaysia memberikan perlawanan sengit di set kedua dan berhasil menang dengan skor 25-23.
+Garuda Muda tidak menyerah begitu saja dan mampu membalas kekalahan di set ketiga dan keempat dengan skor 25-21 dan 25-20. Pemain andalan Indonesia, Amalia Nurul, berhasil mencetak 20 poin sepanjang pertandingan dan menjadi pemain terbaik di timnya. Pelatih tim Indonesia, Yosef Pratama, mengatakan bahwa kemenangan ini menjadi modal berharga bagi timnya untuk menghadapi pertandingan selanjutnya. "Kami masih harus bekerja keras untuk bisa tampil maksimal di SEA Games nanti, tapi kemenangan ini memberikan motivasi dan semangat lebih untuk terus berlatih dan berjuang," ujarnya. Pertandingan selanjutnya bagi Garuda Muda adalah melawan tim voli putri Thailand pada bulan Mei mendatang.'
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+</ScrollView>

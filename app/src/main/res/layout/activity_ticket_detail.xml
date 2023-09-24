@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TicketDetail"
+    android:background="@color/biru">
+
+    <ImageButton
+        android:id="@+id/back_btn_ticket"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-13dp"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/back_btn" />
+
+    <TextView
+        android:id="@+id/judulPage_ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="157dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="Tickets"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/logoBeehive_ticket"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="63dp"
+            app:srcCompat="@drawable/lawan5"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:id="@+id/namaBeehive_ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="120dp"
+            android:text="Hanover"
+            android:textColor="@color/white"
+            android:fontFamily="@font/inter_semibold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/logoLawan_ticket"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="83dp"
+            android:layout_marginTop="232dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/lawan2" />
+
+        <TextView
+            android:id="@+id/namaLawan_ticket"
+            android:layout_width="117dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="280dp"
+            android:layout_marginEnd="127dp"
+            android:layout_marginBottom="415dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Shodwe"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/vs_tv_ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="208dp"
+        android:text="VS"
+        android:textColor="@color/white"
+        android:fontFamily="@font/inter_semibold"
+        android:textSize="20sp"/>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_ticket"
+        android:layout_width="366dp"
+        android:layout_height="287dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="34dp"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="286dp">
+
+            <TextView
+                android:id="@+id/tanggal_ticket"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="139dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="5 MAY 2023"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tempat_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginBottom="224dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="Gelora Bung Karno"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/jam_ticket"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="115dp"
+                android:layout_marginBottom="223dp"
+                android:layout_toEndOf="@+id/tempat_ticket"
+                android:fontFamily="@font/inter_medium"
+                android:text="15:00"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/price_tv_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="23dp"
+                android:layout_marginBottom="186dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Price"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/angkaHarga_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="154dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Rp 150.000"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/quantity_tv_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="147dp"
+                android:layout_marginBottom="109dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Quantity"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/quantity_edt_ticket"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="100dp"
+                android:ems="10"
+                android:fontFamily="@font/inter_semibold"
+                android:hint="0"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <android.widget.Button
+                android:id="@+id/buy_btn_ticket"
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/signup_kotak"
+                android:backgroundTint="@color/orange"
+                android:fontFamily="@font/inter_bold"
+                android:text="BUY"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

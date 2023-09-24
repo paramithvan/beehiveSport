@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".schedule"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/logo_schedule"
+        android:layout_width="63dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logout_button_schedule"
+        app:layout_constraintVertical_bias="0.85"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageButton
+        android:id="@+id/logout_button_schedule"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="right"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="14dp"
+        android:layout_weight="1"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_logout_24"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/Match_tv_schedule"
+        android:layout_width="113dp"
+        android:layout_height="44dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_toStartOf="@+id/logout_button_schedule"
+        android:layout_toEndOf="@+id/logo_schedule"
+        android:fontFamily="@font/inter_bold"
+        android:gravity="center"
+        android:text="Matchs"
+        android:textColor="@color/biru"
+        android:textSize="20sp" />
+
+    <View
+    android:id="@+id/divider_match"
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:layout_below="@id/Match_tv_schedule"
+    android:layout_alignParentStart="true"
+    android:layout_marginStart="0dp"
+    android:layout_marginTop="13dp"
+    android:background="@color/biru" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylerView_Schedule"
+        android:layout_width="match_parent"
+        android:layout_height="630dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/rc_schedule" />
+
+</RelativeLayout>
